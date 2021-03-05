@@ -8,15 +8,29 @@
 @import "node_modules/bootstrap/scss/code";
 @import "node_modules/bootstrap/scss/grid";
 
+// variables
+$primary: #222a36;
+$secondary: #676cdb;
+$danger: #f06860;
+$info: #3aafc9;
+$dark: #1c232e;
+$gray: #7f848b;
+$warning: #f1b457;
+$white: #ffffff;
+$success: #75bd53;
+$light: #eff0f1;
+
+$border-radius: 0;
+
 $theme-colors: (
-	"primary": #222a36,
-	"secondary": #676cdb,
-	"danger": #f06860,
-	"info": #3aafc9,
-	"dark": #1c232e,
-	"gray": #7f848b,
-	"warning": #f1b457,
-	"white": #ffffff,
-	"success": #75bd53,
-	"light": #eff0f1
+	"primary": $primary,
+	"secondary": $secondary,
+	"danger": $danger,
+	"info": $info,
+	"dark": $dark,
+	"gray": $gray,
+	"warning": $warning,
+	"white": $white,
+	"success": $success,
+	"light": $light
 );
