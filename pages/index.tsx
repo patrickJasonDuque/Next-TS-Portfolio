@@ -6,7 +6,9 @@ export default function Home() {
 	return (
 		<div className={styles.container}>
 			<Head title='Welcome to Patrick&#39;s Portfolio' />
-			<Button variant='secondary'>Helo</Button>
+			<Button variant='secondary'>
+				<strong>ADAM/Z</strong>
+			</Button>
 		</div>
 	);
 }

@@ -20,7 +20,14 @@ $white: #ffffff;
 $success: #75bd53;
 $light: #eff0f1;
 
+// border radius
 $border-radius: 0;
+
+// button
+$btn-border-radius: $border-radius;
+
+// font
+$font-family-base: 'Numans', sans-serif;
 
 $theme-colors: (
 	"primary": $primary,
