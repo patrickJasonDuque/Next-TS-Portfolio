@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic';
 
 import Head from '../components/Head';
+import Footer from '../components/Footer';
 import styles from '../styles/Home.module.scss';
 import { Fade } from 'react-awesome-reveal';
 
@@ -19,6 +20,7 @@ export default function Home() {
 				</Fade>
 			</div>
 			<div style={{ height: '1000px' }} />
+			<Footer />
 		</div>
 	);
 }

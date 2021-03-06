@@ -1,10 +1,14 @@
 @import './variables.scss';
 
-.slash {
-	color: $info;
-	font-size: 1.2em;
-}
+.name {
+	color: $white;
 
-.lastName {
-	color: $danger;
+	.slash {
+		color: $info;
+		font-size: 1.2em;
+	}
+
+	.lastName {
+		color: $danger;
+	}
 }

@@ -9,6 +9,9 @@ $warning: #f1b457;
 $white: #ffffff;
 $success: #75bd53;
 $light: #eff0f1;
+$linkedInColor: #0077b5;
+$githubColor: #7dbbe6;
+$facebookColor: #3b5998;
 
 // body
 $body-bg: $primary;
@@ -21,6 +24,7 @@ $btn-border-radius: $border-radius;
 
 // font
 $font-family-base: 'Quicksand';
+$text-muted: $gray;
 
 $theme-colors: (
 	"primary": $primary,

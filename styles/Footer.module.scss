@@ -1,0 +1,37 @@
+@import './variables.scss';
+
+.linkedIn {
+	color: $primary;
+	transition: color 0.5s;
+}
+
+.linkedIn:hover {
+	color: $linkedInColor;
+}
+
+.badge {
+	background-color: $gray;
+	transition: background-color 0.5s;
+}
+
+.badge:hover {
+	background-color: $primary;
+}
+
+.github {
+	color: $primary;
+	transition: color 0.5s;
+}
+
+.github:hover {
+	color: $githubColor;
+}
+
+.facebook {
+	color: $primary;
+	transition: color 0.5s;
+}
+
+.facebook:hover {
+	color: $facebookColor;
+}

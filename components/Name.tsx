@@ -4,8 +4,8 @@ interface Props {}
 
 const Name: React.FC<Props> = () => {
 	return (
-		<h3>
-			P A T R I C K <span className={styles.slash}>/</span> <span className={styles.lastName}>D</span>
+		<h3 className={styles.name}>
+			P A T R I C K <span className={styles.slash}>/</span> <span className={styles.lastName}>D</span> .
 		</h3>
 	);
 };
