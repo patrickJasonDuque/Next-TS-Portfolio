@@ -2,8 +2,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import { BiMailSend, BiFace, BiHdd } from 'react-icons/bi';
 
 import Navlink from './Navlink';
-
-import styles from '../styles/Navbar.module.scss';
+import Name from './Name';
 
 interface Props {}
 
@@ -21,9 +20,7 @@ const NavBar: React.FC<Props> = () => {
 						</Nav>
 					</Navbar.Collapse>
 					<Navbar.Brand href='#home'>
-						<h3>
-							P A T R I C K <span className={styles.slash}>/</span> <span className={styles.lastName}>D</span>
-						</h3>
+						<Name />
 					</Navbar.Brand>
 				</Navbar>
 			</Container>
