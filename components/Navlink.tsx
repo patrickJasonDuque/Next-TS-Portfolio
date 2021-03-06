@@ -6,10 +6,8 @@ import { Nav } from 'react-bootstrap';
 import { BsDot } from 'react-icons/bs';
 import { IconContext } from 'react-icons';
 
-import styles from '../styles/Navlink.module.scss';
-
 interface Props {
-	icon: any;
+	icon: JSX.Element;
 	label: string;
 	route: string;
 	color: string;
@@ -18,17 +16,21 @@ interface Props {
 const Navlink: React.FC<Props> = ({ icon, label, route, color }) => {
 	const router = useRouter();
 
-	let activeColor = useMemo(() => '#7f848b', [ route ]);
-	if (router.asPath.includes(route)) activeColor = color;
+	let active = false;
+	if (router.asPath.includes(route)) {
+		active = true;
+	}
 
 	return (
 		<Nav.Item>
 			<Link href={route} passHref>
-				<Nav.Link className={styles.active}>
+				<Nav.Link>
 					<h4>
-						<IconContext.Provider value={{ color: activeColor, className: 'mr-1' }}>{icon}</IconContext.Provider>
+						<IconContext.Provider value={{ color: active ? color : '#7f848b', className: 'mr-1' }}>
+							{icon}
+						</IconContext.Provider>
 						{label}
-						<IconContext.Provider value={{ color: activeColor, size: '1em' }}>
+						<IconContext.Provider value={{ color: active ? color : '#7f848b', size: '1em' }}>
 							<BsDot />
 						</IconContext.Provider>
 					</h4>
