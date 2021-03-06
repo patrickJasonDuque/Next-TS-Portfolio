@@ -3,6 +3,8 @@ import { BiMailSend, BiFace, BiHdd } from 'react-icons/bi';
 
 import Navlink from './Navlink';
 
+import styles from '../styles/Navbar.module.scss';
+
 interface Props {}
 
 const NavBar: React.FC<Props> = () => {
@@ -13,14 +15,14 @@ const NavBar: React.FC<Props> = () => {
 					<Navbar.Toggle aria-controls='basic-navbar-nav' />
 					<Navbar.Collapse id='basic-navbar-nav'>
 						<Nav>
-							<Navlink icon={<BiFace />} label='Stories' route='#stories' />
-							<Navlink icon={<BiHdd />} label='Works' route='#works' />
-							<Navlink icon={<BiMailSend />} label='Contact' route='#contact' />
+							<Navlink icon={<BiFace />} label='STORIES' route='#stories' color='#676cdb' />
+							<Navlink icon={<BiHdd />} label='WORKS' route='#works' color='#f1b457' />
+							<Navlink icon={<BiMailSend />} label='CONTACT' route='#contact' color='#75bd53' />
 						</Nav>
 					</Navbar.Collapse>
 					<Navbar.Brand href='#home'>
 						<h3>
-							P A T R I C K <strong className='text-info'>/</strong> D
+							P A T R I C K <span className={styles.slash}>/</span> <span className={styles.lastName}>D</span>
 						</h3>
 					</Navbar.Brand>
 				</Navbar>
