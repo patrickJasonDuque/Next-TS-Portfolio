@@ -15,7 +15,7 @@ export default function Home() {
 			<div className='text-white text-center mt-5' id='contact'>
 				<div style={{ height: '500px' }} />
 				<Fade>
-					<p>I will gently appear as I enter the viewport</p>
+					<h1 className='text-success'>Contact Me</h1>
 				</Fade>
 			</div>
 			<div style={{ height: '1000px' }} />
