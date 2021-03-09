@@ -4,11 +4,19 @@
 	border-radius: 50%;
 	background-color: $secondary;
 	color: white;
-	height: 150px;
 	width: 150px;
+	height: 150px;
 
 	h4 {
 		transform: rotate(-13deg);
 		font-weight: 700;
+		transition: transform 1.5s;
+		cursor: default;
+	}
+}
+
+.circle:hover {
+	h4 {
+		transform: rotate(13deg);
 	}
 }
