@@ -1,0 +1,14 @@
+@import './variables.scss';
+
+.circle {
+	border-radius: 50%;
+	background-color: $secondary;
+	color: white;
+	height: 150px;
+	width: 150px;
+
+	h4 {
+		transform: rotate(-13deg);
+		font-weight: 700;
+	}
+}
