@@ -17,7 +17,7 @@ const Navlink: React.FC<Props> = ({ icon, label, route, color }) => {
 	const router = useRouter();
 
 	let active = false;
-	if (router.asPath.includes(route)) {
+	if (router.asPath.substring(1) === route) {
 		active = true;
 	}
 
