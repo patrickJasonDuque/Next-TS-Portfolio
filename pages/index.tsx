@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic';
 import Head from '../components/Head';
 import Footer from '../components/Footer';
 import Stories from '../components/Stories';
+import Contact from '../components/Contact';
 import BackToTopButton from '../components/BackToTopButton';
 
 import { Fade } from 'react-awesome-reveal';
@@ -24,7 +25,7 @@ export default function Home() {
 					<h1 className='text-success'>Contact Me</h1>
 				</Fade>
 			</div>
-			<div style={{ height: '1000px' }} />
+			<Contact />
 			<Footer />
 		</div>
 	);

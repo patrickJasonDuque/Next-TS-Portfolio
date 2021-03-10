@@ -17,3 +17,19 @@ a {
 * {
 	box-sizing: border-box;
 }
+
+.form-control {
+	border: none;
+	border-bottom: 1px solid $gray;
+	background-color: $primary;
+	color: $white;
+	width: 100%;
+	box-shadow: none;
+	border-radius: 0;
+}
+
+.form-control:focus,
+.form-control:enabled {
+	background-color: $primary;
+	color: $white;
+}

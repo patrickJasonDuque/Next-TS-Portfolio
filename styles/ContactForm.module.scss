@@ -1,0 +1,19 @@
+@import './variables.scss';
+
+.ContactForm {
+	.label {
+		font-size: 2em;
+		font-weight: bold;
+	}
+
+	.button {
+		border: none;
+		background-color: $primary;
+		font-size: 2em;
+	}
+
+	.button:hover {
+		border: none;
+		background-color: $primary;
+	}
+}
