@@ -4,6 +4,7 @@ import Head from '../components/Head';
 import Footer from '../components/Footer';
 import Stories from '../components/Stories';
 import Contact from '../components/Contact';
+import Experience from '../components/Experience';
 import BackToTopButton from '../components/BackToTopButton';
 
 import { Fade } from 'react-awesome-reveal';
@@ -19,6 +20,7 @@ export default function Home() {
 			<Navbar />
 			<Stories />
 			<div style={{ height: '1000px' }} />
+			<Experience />
 			<div className='text-white mt-5'>
 				<div style={{ height: '500px' }} />
 				<div id='contact'>

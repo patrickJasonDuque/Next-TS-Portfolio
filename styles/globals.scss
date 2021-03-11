@@ -33,3 +33,7 @@ a {
 	background-color: $primary;
 	color: $white;
 }
+
+hr {
+	border-top: 2px solid rgba($color: $gray, $alpha: 0.4);
+}

@@ -1,0 +1,11 @@
+@import './variables.scss';
+
+.Experience {
+	background-color: $dark;
+	min-height: 100vh;
+
+	.box {
+		height: 10vh;
+		width: 100%;
+	}
+}
