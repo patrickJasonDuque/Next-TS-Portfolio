@@ -2,12 +2,14 @@ import { Fragment } from 'react';
 
 import styles from '../styles/Circle.module.scss';
 
-interface Props {}
+interface Props {
+	title: string;
+}
 
-const Circle: React.FC<Props> = () => {
+const Circle: React.FC<Props> = ({ title }) => {
 	return (
 		<div className={`${styles.circle} text-center d-flex justify-content-center align-items-center`}>
-			<h4>Developer</h4>
+			<h4>{title}</h4>
 		</div>
 	);
 };

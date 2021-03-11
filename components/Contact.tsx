@@ -1,26 +1,40 @@
 import { Fragment } from 'react';
-import axios from 'axios';
+import { FaArrowRight } from 'react-icons/fa';
 import { Row, Col, Container } from 'react-bootstrap';
 import ContactForm from './ContactForm';
+import Circle from './Circle';
 
 import styles from '../styles/Contact.module.scss';
 
 interface Props {}
 
 const Contact: React.FC<Props> = () => {
-	const handleSendEmail = async () => {
-		axios.post('/api/email');
-	};
-
 	return (
 		<Fragment>
 			<Container className={`${styles.Contact} mt-5`}>
 				<Row>
-					<Col md={8}>
-						<h1>Let's - </h1>
-						<h1>Connect</h1>
+					<Col xs={12} lg={8}>
+						<h1 className={styles.header}>
+							Let's
+							<span className='text-info ml-2'>
+								<FaArrowRight />
+							</span>
+						</h1>
+						<h1 className={styles.header}>Connect.</h1>
+						<Col md={8}>
+							<p className='text-muted'>
+								Patrick Jason Duque is a professional Typescript developer, who uses framework such as{' '}
+								<span className='text-info'>React</span>, <span className='text-success'>Vue</span>, and
+								<span className='text-warning'> Express</span>. Loves to add clarity to complicated concepts of
+								programming.
+							</p>
+						</Col>
+						<Container className='d-flex justify-content-end my-5'>
+							<Circle title='Open for new project.' />
+							<div className='w-25 d-none d-lg-block' />
+						</Container>
 					</Col>
-					<Col md={4}>
+					<Col xs={12} lg={4}>
 						<ContactForm />
 					</Col>
 				</Row>

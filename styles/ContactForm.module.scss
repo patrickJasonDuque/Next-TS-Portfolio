@@ -12,8 +12,10 @@
 		font-size: 2em;
 	}
 
-	.button:hover {
+	.button:hover,
+	.button:focus {
 		border: none;
 		background-color: $primary;
+		color: $secondary;
 	}
 }

@@ -12,7 +12,7 @@ const Stories: React.FC<Props> = () => {
 			<Container className={`mt-5 ${styles.Stories}`}>
 				<Row>
 					<Col xs={12} md={4} className='d-flex justify-content-md-end'>
-						<Circle />
+						<Circle title='Developer' />
 					</Col>
 					<Col xs={12} md={3} />
 					<Col xs={12} md={5} className='mt-5 mt-md-0'>

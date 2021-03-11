@@ -19,13 +19,12 @@ export default function Home() {
 			<Navbar />
 			<Stories />
 			<div style={{ height: '1000px' }} />
-			<div className='text-white text-center mt-5' id='contact'>
+			<div className='text-white mt-5' id='contact'>
 				<div style={{ height: '500px' }} />
 				<Fade>
-					<h1 className='text-success'>Contact Me</h1>
+					<Contact />
 				</Fade>
 			</div>
-			<Contact />
 			<Footer />
 		</div>
 	);
