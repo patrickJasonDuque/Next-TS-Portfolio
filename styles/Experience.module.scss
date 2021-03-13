@@ -2,10 +2,30 @@
 
 .Experience {
 	background-color: $dark;
-	min-height: 100vh;
+	min-height: 85vh;
 
 	.box {
 		height: 10vh;
 		width: 100%;
+	}
+}
+
+.cardContainer {
+	width: 100%;
+	background: linear-gradient($dark 50%, $primary 0%);
+	display: flex;
+	justify-content: center;
+
+	.experienceCard {
+		height: 35vh;
+		background-color: $cardColor;
+		position: relative;
+		width: 300px;
+		margin: auto;
+
+		.holder {
+			position: absolute;
+			bottom: 30px;
+		}
 	}
 }

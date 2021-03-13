@@ -11,7 +11,7 @@ interface Props {}
 const Contact: React.FC<Props> = () => {
 	return (
 		<Fragment>
-			<Container className={`${styles.Contact} mt-5`}>
+			<Container className={`${styles.Contact} mt-5`} id='contact'>
 				<Row>
 					<Col xs={12} lg={8}>
 						<h1 className={styles.header}>

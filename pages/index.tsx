@@ -7,7 +7,7 @@ import Contact from '../components/Contact';
 import Experience from '../components/Experience';
 import BackToTopButton from '../components/BackToTopButton';
 
-import { Fade } from 'react-awesome-reveal';
+import { Fade, Slide } from 'react-awesome-reveal';
 import styles from '../styles/Home.module.scss';
 
 const Navbar = dynamic(() => import('../components/Navbar'), { ssr: false });
@@ -20,15 +20,13 @@ export default function Home() {
 			<Navbar />
 			<Stories />
 			<div style={{ height: '1000px' }} />
-			<Experience />
-			<div className='text-white mt-5'>
-				<div style={{ height: '500px' }} />
-				<div id='contact'>
-					<Fade>
-						<Contact />
-					</Fade>
-				</div>
-			</div>
+			<Fade>
+				<Experience />
+			</Fade>
+			<div style={{ height: '500px' }} />
+			<Slide>
+				<Contact />
+			</Slide>
 			<Footer />
 		</div>
 	);
