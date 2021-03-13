@@ -2,6 +2,8 @@ import { SiNextDotJs, SiReact, SiVueDotJs, SiNodeDotJs, SiMongodb, SiSass } from
 import { IoLogoSass } from 'react-icons/io';
 import { Col, Container, Row } from 'react-bootstrap';
 
+import Icon from './Icon';
+
 import styles from '../styles/Experience.module.scss';
 
 interface Props {}
@@ -34,23 +36,23 @@ const Experience: React.FC<Props> = () => {
 			<div className={styles.box} />
 			<Container className='text-white'>
 				<Row className='mx-auto text-center'>
-					<Col xs={6} md={2}>
-						<SiReact /> React
+					<Col xs={6} md={2} className='my-3 my-lg-0'>
+						<Icon title='React' iconPath='/react.png' />
 					</Col>
-					<Col xs={6} md={2}>
-						<SiNextDotJs /> NextJS
+					<Col xs={6} md={2} className='my-3 my-lg-0'>
+						<Icon title='Next' iconPath='/nextjs.png' />
 					</Col>
-					<Col xs={6} md={2}>
-						<IoLogoSass /> SaSS
+					<Col xs={6} md={2} className='my-3 my-lg-0'>
+						<Icon title='Sass' iconPath='/sass.png' />
 					</Col>
-					<Col xs={6} md={2}>
-						<SiVueDotJs /> Vue
+					<Col xs={6} md={2} className='my-3 my-lg-0'>
+						<Icon title='Vue' iconPath='/vue.png' />
 					</Col>
-					<Col xs={6} md={2}>
-						<SiNodeDotJs /> NodeJS
+					<Col xs={6} md={2} className='my-3 my-lg-0'>
+						<Icon title='typescript' iconPath='/typescript.png' />
 					</Col>
-					<Col xs={6} md={2}>
-						<SiMongodb /> MongoDB
+					<Col xs={6} md={2} className='my-3 my-lg-0'>
+						<Icon title='python' iconPath='/python.png' />
 					</Col>
 				</Row>
 			</Container>

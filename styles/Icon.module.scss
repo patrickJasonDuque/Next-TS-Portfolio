@@ -1,0 +1,12 @@
+@import './variables.scss';
+
+.image {
+	filter: grayscale(100%);
+	transition: filter 1s;
+	width: 64px;
+	height: 64px;
+}
+
+.image:hover {
+	filter: none;
+}
