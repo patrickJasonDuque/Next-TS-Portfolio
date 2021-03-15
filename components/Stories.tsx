@@ -16,7 +16,7 @@ const Stories: React.FC<Props> = () => {
 					</Col>
 					<Col xs={12} md={3} className='d-none d-lg-block' />
 					<Col xs={12} md={8} lg={5} className='mt-5 mt-md-0'>
-						<div className='ml-5'>
+						<div className='ml-0 ml-md-5'>
 							<p className='text-muted'>
 								<strong>/ THIS IS ME</strong>
 							</p>
