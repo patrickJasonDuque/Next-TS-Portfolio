@@ -1,6 +1,6 @@
-import { Fragment, useState } from 'react';
+import { Fragment } from 'react';
 import { Col, Container, Row, Card } from 'react-bootstrap';
-import { Typewriter } from 'react-typewriting-effect';
+import Typewriter from 'typewriter-effect';
 import { Zoom } from 'react-awesome-reveal';
 import { AiOutlineCode } from 'react-icons/ai';
 import { HiOutlineCode } from 'react-icons/hi';
@@ -12,8 +12,6 @@ import styles from '../styles/Experience.module.scss';
 interface Props {}
 
 const Experience: React.FC<Props> = () => {
-	const [ experience, setExperience ] = useState<string>('Experience');
-
 	return (
 		<Fragment>
 			<Container className={`${styles.Experience} px-0`} fluid id='works'>
@@ -23,11 +21,12 @@ const Experience: React.FC<Props> = () => {
 						<Col xs={12} lg={6}>
 							<div className={styles.typewriterHolder}>
 								<Typewriter
-									string={experience}
-									delay={80}
-									onComplete={() => {}}
-									className={styles.typewriter}
-									stopBlinkinOnComplete
+									onInit={() => {}}
+									options={{
+										strings: `Experience`,
+										autoStart: true,
+										loop: true
+									}}
 								/>
 							</div>
 						</Col>

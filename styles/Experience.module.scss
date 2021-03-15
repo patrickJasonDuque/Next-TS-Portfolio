@@ -11,13 +11,11 @@
 
 	.typewriterHolder {
 		transform: rotate(-13deg);
-
-		.typewriter {
-			font-size: 6em;
-			color: rgba($color: $gray, $alpha: 0.4);
-			font-family: 'Pacifico', cursive;
-			letter-spacing: 5px;
-		}
+		font-size: 6em;
+		color: rgba($color: $gray, $alpha: 0.4);
+		font-family: 'Pacifico', cursive;
+		letter-spacing: 5px;
+		text-align: center;
 	}
 }
 
@@ -45,10 +43,7 @@
 	.Experience {
 		.typewriterHolder {
 			margin-bottom: 100px;
-
-			.typewriter {
-				font-size: 4em;
-			}
+			font-size: 3.5em;
 		}
 	}
 }
@@ -58,10 +53,7 @@
 		.typewriterHolder {
 			margin-bottom: 100px;
 			text-align: center;
-
-			.typewriter {
-				font-size: 7em;
-			}
+			font-size: 7em;
 		}
 	}
 }
