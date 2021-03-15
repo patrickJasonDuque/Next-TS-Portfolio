@@ -8,6 +8,17 @@
 		height: 10vh;
 		width: 100%;
 	}
+
+	.typewriterHolder {
+		transform: rotate(-13deg);
+
+		.typewriter {
+			font-size: 6em;
+			color: rgba($color: $gray, $alpha: 0.4);
+			font-family: 'Pacifico', cursive;
+			letter-spacing: 5px;
+		}
+	}
 }
 
 .cardContainer {
@@ -26,6 +37,31 @@
 		.holder {
 			position: absolute;
 			bottom: 30px;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.Experience {
+		.typewriterHolder {
+			margin-bottom: 100px;
+
+			.typewriter {
+				font-size: 4em;
+			}
+		}
+	}
+}
+
+@media only screen and (device-width: 768px) {
+	.Experience {
+		.typewriterHolder {
+			margin-bottom: 100px;
+			text-align: center;
+
+			.typewriter {
+				font-size: 7em;
+			}
 		}
 	}
 }

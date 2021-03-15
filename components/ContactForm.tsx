@@ -75,7 +75,7 @@ const ContactForm: React.FC<Props> = () => {
 					<Form.Control type='text' name='text' ref={register()} />
 				</Form.Group>
 
-				<Button type='submit' variant='outline-info' className={`${styles.button} p-0 mt-3`} size='lg'>
+				<Button type='submit' variant='outline-info' className={`${styles.button} p-0 my-3`} size='lg'>
 					<strong>Send</strong> <HiArrowRight />
 				</Button>
 

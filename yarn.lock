@@ -1930,6 +1930,11 @@ react-transition-group@^4.4.1:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
+react-typewriting-effect@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-typewriting-effect/-/react-typewriting-effect-1.0.4.tgz#650bd4925a3ace2688a768dc8982aaa9eabad201"
+  integrity sha512-IC4ppqY2AJhMvkNagbha7kPVWDjwdqxY4u8Ho7+GGIAtATga49fEJ3UCg5ZxjBaFmifIhLQtORvhPcNcShlsAw==
+
 react@17.0.1:
   version "17.0.1"
   resolved "https://registry.yarnpkg.com/react/-/react-17.0.1.tgz#6e0600416bd57574e3f86d92edba3d9008726127"

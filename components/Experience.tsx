@@ -1,5 +1,6 @@
-import { Fragment } from 'react';
+import { Fragment, useState } from 'react';
 import { Col, Container, Row, Card } from 'react-bootstrap';
+import { Typewriter } from 'react-typewriting-effect';
 import { Zoom } from 'react-awesome-reveal';
 import { AiOutlineCode } from 'react-icons/ai';
 import { HiOutlineCode } from 'react-icons/hi';
@@ -11,16 +12,27 @@ import styles from '../styles/Experience.module.scss';
 interface Props {}
 
 const Experience: React.FC<Props> = () => {
+	const [ experience, setExperience ] = useState<string>('Experience');
+
 	return (
 		<Fragment>
 			<Container className={`${styles.Experience} px-0`} fluid id='works'>
 				<div className={styles.box} />
 				<Container className='text-white'>
 					<Row>
-						<Col xs={12} md={4} lg={6}>
-							Experience
+						<Col xs={12} lg={6}>
+							<div className={styles.typewriterHolder}>
+								<Typewriter
+									string={experience}
+									delay={80}
+									onComplete={() => {}}
+									className={styles.typewriter}
+									stopBlinkinOnComplete
+								/>
+							</div>
 						</Col>
-						<Col xs={12} md={8} lg={6}>
+						<div className={`${styles.box} d-block d-lg-none`} />
+						<Col xs={12} lg={6}>
 							<p className='text-muted'>
 								<strong>/ PROBLEM SOLVER</strong>
 							</p>
@@ -44,10 +56,10 @@ const Experience: React.FC<Props> = () => {
 							<Icon title='React' iconPath='/react.png' />
 						</Col>
 						<Col xs={6} md={2} className='my-3 my-lg-0'>
-							<Icon title='Next' iconPath='/nextjs.png' />
+							<Icon title='Node' iconPath='/nodejs.png' />
 						</Col>
 						<Col xs={6} md={2} className='my-3 my-lg-0'>
-							<Icon title='Sass' iconPath='/sass.png' />
+							<Icon title='MongoDB' iconPath='/mongodb.png' />
 						</Col>
 						<Col xs={6} md={2} className='my-3 my-lg-0'>
 							<Icon title='Vue' iconPath='/vue.png' />
@@ -64,8 +76,8 @@ const Experience: React.FC<Props> = () => {
 			<Container className={`${styles.cardContainer}`} fluid>
 				<Zoom>
 					<Row>
-						<Col xs={12} md={4}>
-							<Card className={`${styles.experienceCard} text-white mt-3 mt-md-0 p-4`}>
+						<Col xs={12} lg={4}>
+							<Card className={`${styles.experienceCard} text-white mt-3 mt-lg-0 p-4`}>
 								<Card.Body>
 									<div className={styles.holder}>
 										<h1 className='text-secondary'>
@@ -81,8 +93,8 @@ const Experience: React.FC<Props> = () => {
 								</Card.Body>
 							</Card>
 						</Col>
-						<Col xs={12} md={4}>
-							<Card className={`${styles.experienceCard} bg-secondary text-white mt-3 mt-md-0 p-4`}>
+						<Col xs={12} lg={4}>
+							<Card className={`${styles.experienceCard} bg-secondary text-white mt-3 mt-lg-0 p-4`}>
 								<Card.Body>
 									<div className={styles.holder}>
 										<h1 className='text-white'>
@@ -98,8 +110,8 @@ const Experience: React.FC<Props> = () => {
 								</Card.Body>
 							</Card>
 						</Col>
-						<Col xs={12} md={4}>
-							<Card className={`${styles.experienceCard} text-white mt-3 mt-md-0 p-4`}>
+						<Col xs={12} lg={4}>
+							<Card className={`${styles.experienceCard} text-white mt-3 mt-lg-0 p-4`}>
 								<Card.Body>
 									<div className={styles.holder}>
 										<h1 className='text-secondary'>
