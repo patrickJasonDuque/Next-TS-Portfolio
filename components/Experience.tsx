@@ -73,9 +73,9 @@ const Experience: React.FC<Props> = () => {
 				</Container>
 			</Container>
 			<Container className={`${styles.cardContainer}`} fluid>
-				<Zoom>
-					<Row>
-						<Col xs={12} lg={4}>
+				<Row>
+					<Col xs={12} lg={4}>
+						<Zoom>
 							<Card className={`${styles.experienceCard} text-white mt-3 mt-lg-0 p-4`}>
 								<Card.Body>
 									<div className={styles.holder}>
@@ -91,8 +91,10 @@ const Experience: React.FC<Props> = () => {
 									</div>
 								</Card.Body>
 							</Card>
-						</Col>
-						<Col xs={12} lg={4}>
+						</Zoom>
+					</Col>
+					<Col xs={12} lg={4}>
+						<Zoom>
 							<Card className={`${styles.experienceCard} bg-secondary text-white mt-3 mt-lg-0 p-4`}>
 								<Card.Body>
 									<div className={styles.holder}>
@@ -108,8 +110,10 @@ const Experience: React.FC<Props> = () => {
 									</div>
 								</Card.Body>
 							</Card>
-						</Col>
-						<Col xs={12} lg={4}>
+						</Zoom>
+					</Col>
+					<Col xs={12} lg={4}>
+						<Zoom>
 							<Card className={`${styles.experienceCard} text-white mt-3 mt-lg-0 p-4`}>
 								<Card.Body>
 									<div className={styles.holder}>
@@ -125,9 +129,9 @@ const Experience: React.FC<Props> = () => {
 									</div>
 								</Card.Body>
 							</Card>
-						</Col>
-					</Row>
-				</Zoom>
+						</Zoom>
+					</Col>
+				</Row>
 			</Container>
 		</Fragment>
 	);
