@@ -44,7 +44,7 @@ const Works: React.FC<Props> = () => {
 			],
 			theme: Theme.INFO,
 			image: './techshop.png',
-			websiteLink: 'https://techshop.vercel.app/',
+			websiteLink: 'https://techshop-5h2i9ttcv-patrickjasonduque.vercel.app/',
 			githubLink: 'https://github.com/patrickJasonDuque/Next-TS-Shop'
 		},
 		{
