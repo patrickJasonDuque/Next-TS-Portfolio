@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 import Circle from './Circle';
 import { Col, Row, Container } from 'react-bootstrap';
+import { Roll } from 'react-awesome-reveal';
 
 import styles from '../styles/Stories.module.scss';
 
@@ -12,7 +13,9 @@ const Stories: React.FC<Props> = () => {
 			<Container className={`mt-5 ${styles.Stories}`}>
 				<Row>
 					<Col xs={12} md={4} lg={4} className='d-flex justify-content-md-end'>
-						<Circle title='Developer' />
+						<Roll>
+							<Circle title='Developer' />
+						</Roll>
 					</Col>
 					<Col xs={12} md={3} className='d-none d-lg-block' />
 					<Col xs={12} md={8} lg={5} className='mt-5 mt-md-0'>
