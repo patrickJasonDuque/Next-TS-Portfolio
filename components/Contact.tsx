@@ -3,7 +3,7 @@ import { FaArrowRight } from 'react-icons/fa';
 import { Row, Col, Container } from 'react-bootstrap';
 import ContactForm from './ContactForm';
 import Circle from './Circle';
-import { Bounce } from 'react-awesome-reveal';
+import { Roll } from 'react-awesome-reveal';
 
 import styles from '../styles/Contact.module.scss';
 
@@ -31,9 +31,9 @@ const Contact: React.FC<Props> = () => {
 							</p>
 						</Col>
 						<Container className='d-flex justify-content-end my-5'>
-							<Bounce>
+							<Roll>
 								<Circle title='Open for new project.' />
-							</Bounce>
+							</Roll>
 							<div className='w-25 d-none d-lg-block' />
 						</Container>
 					</Col>

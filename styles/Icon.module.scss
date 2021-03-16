@@ -2,11 +2,13 @@
 
 .image {
 	filter: grayscale(100%);
-	transition: filter 1s;
+	transition: all 1s;
 	width: 64px;
 	height: 64px;
 }
 
 .image:hover {
 	filter: none;
+	height: 70px;
+	width: 70px;
 }

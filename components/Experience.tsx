@@ -14,7 +14,7 @@ interface Props {}
 const Experience: React.FC<Props> = () => {
 	return (
 		<Fragment>
-			<Container className={`${styles.Experience} px-0`} fluid id='works'>
+			<Container className={`${styles.Experience} px-0`} fluid>
 				<div className={styles.box} />
 				<Container className='text-white'>
 					<Row>
@@ -47,7 +47,7 @@ const Experience: React.FC<Props> = () => {
 					</Row>
 				</Container>
 				<div className={styles.box} />
-				<hr className='w-100' />
+				<hr className='w-100' id='works' />
 				<div className={styles.box} />
 				<Container className='text-white'>
 					<Row className='mx-auto text-center'>

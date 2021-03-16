@@ -5,6 +5,7 @@ import Footer from '../components/Footer';
 import Stories from '../components/Stories';
 import Contact from '../components/Contact';
 import Experience from '../components/Experience';
+import Works from '../components/Works';
 import BackToTopButton from '../components/BackToTopButton';
 
 import { Fade, Slide } from 'react-awesome-reveal';
@@ -19,11 +20,13 @@ export default function Home() {
 			<Head title='Welcome to Patrick&#39;s Portfolio' />
 			<Navbar />
 			<Stories />
-			<div style={{ height: '1000px' }} />
 			<Fade>
 				<Experience />
 			</Fade>
-			<div style={{ height: '500px' }} />
+			<Works />
+			<div style={{ height: '10vh' }} />
+			<hr />
+			<div style={{ height: '10vh' }} />
 			<Slide>
 				<Contact />
 			</Slide>

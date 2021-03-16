@@ -1,0 +1,14 @@
+@import './variables.scss';
+
+.Work {
+	.description {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.workImage {
+		border: 5px solid $dark;
+		border-radius: 5px;
+	}
+}
