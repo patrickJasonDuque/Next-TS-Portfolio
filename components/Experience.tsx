@@ -56,19 +56,19 @@ const Experience: React.FC<Props> = () => {
 							<Icon title='React' iconPath='/react.png' />
 						</Col>
 						<Col xs={6} md={2} className='my-3 my-lg-0'>
+							<Icon title='Next' iconPath='/nextjs.png' />
+						</Col>
+						<Col xs={6} md={2} className='my-3 my-lg-0'>
+							<Icon title='Vue' iconPath='/vue.png' />
+						</Col>
+						<Col xs={6} md={2} className='my-3 my-lg-0'>
 							<Icon title='Node' iconPath='/nodejs.png' />
 						</Col>
 						<Col xs={6} md={2} className='my-3 my-lg-0'>
 							<Icon title='MongoDB' iconPath='/mongodb.png' />
 						</Col>
 						<Col xs={6} md={2} className='my-3 my-lg-0'>
-							<Icon title='Vue' iconPath='/vue.png' />
-						</Col>
-						<Col xs={6} md={2} className='my-3 my-lg-0'>
 							<Icon title='typescript' iconPath='/typescript.png' />
-						</Col>
-						<Col xs={6} md={2} className='my-3 my-lg-0'>
-							<Icon title='python' iconPath='/python.png' />
 						</Col>
 					</Row>
 				</Container>
