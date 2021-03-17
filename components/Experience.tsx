@@ -4,6 +4,7 @@ import Typewriter from 'typewriter-effect';
 import { Zoom } from 'react-awesome-reveal';
 import { AiOutlineCode } from 'react-icons/ai';
 import { HiOutlineCode } from 'react-icons/hi';
+import { RiStackOverflowLine } from 'react-icons/ri';
 
 import Icon from './Icon';
 
@@ -118,13 +119,13 @@ const Experience: React.FC<Props> = () => {
 								<Card.Body>
 									<div className={styles.holder}>
 										<h1 className='text-secondary'>
-											<AiOutlineCode />
+											<RiStackOverflowLine />
 										</h1>
 										<h4>
-											<strong>Back-end</strong>
+											<strong>Fullstack</strong>
 										</h4>
 										<h4>
-											<strong>Developer .</strong>
+											<strong>Developer.</strong>
 										</h4>
 									</div>
 								</Card.Body>
