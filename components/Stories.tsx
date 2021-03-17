@@ -40,11 +40,11 @@ const Stories: React.FC<Props> = () => {
 						</span>
 					</h1>
 				</div>
-				<div>
-					<h5 className='text-muted d-none d-md-block'>
+				<div className='d-flex'>
+					<h5 className='text-muted d-none d-md-flex align-items-center justify-content-center'>
 						SCROLL FOR MORE <FaArrowDown />
 					</h5>
-					<h1 className={`${styles.mouse} text-muted mb-5 mb-md-0 text-right`}>
+					<h1 className={`${styles.mouse} text-muted mb-5 mb-md-0 text-right d-inline`}>
 						<CgMouse />
 					</h1>
 				</div>
