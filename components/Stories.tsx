@@ -1,6 +1,8 @@
 import Circle from './Circle';
 import { Col, Row, Container } from 'react-bootstrap';
 import { Roll } from 'react-awesome-reveal';
+import { FaArrowRight, FaArrowDown } from 'react-icons/fa';
+import { CgMouse } from 'react-icons/cg';
 
 import styles from '../styles/Stories.module.scss';
 
@@ -28,6 +30,25 @@ const Stories: React.FC<Props> = () => {
 					</div>
 				</Col>
 			</Row>
+			<Container fluid className={`${styles.titleContainer}`}>
+				<div>
+					<h1 className={styles.title}>Patrick</h1>
+					<h1 className={`${styles.title} mb-5 mb-md-0`}>
+						Duque{' '}
+						<span className='text-info'>
+							<FaArrowRight />
+						</span>
+					</h1>
+				</div>
+				<div>
+					<h5 className='text-muted d-none d-md-block'>
+						SCROLL FOR MORE <FaArrowDown />
+					</h5>
+					<h1 className={`${styles.mouse} text-muted mb-5 mb-md-0 text-right`}>
+						<CgMouse />
+					</h1>
+				</div>
+			</Container>
 		</Container>
 	);
 };
