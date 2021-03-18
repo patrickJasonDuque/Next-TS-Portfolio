@@ -18,9 +18,7 @@ import {
 } from 'react-icons/si';
 import { IoLogoSass } from 'react-icons/io';
 import { FaStripe } from 'react-icons/fa';
-import { JackInTheBox } from 'react-awesome-reveal';
 
-import IconType from '../helpers/Icon';
 import { Theme } from '../helpers/ThemeEnum';
 
 import Work from './Work';
@@ -379,18 +377,16 @@ const Works: React.FC<Props> = () => {
 				<div key={i}>
 					<div className={`${styles.box}`} />
 					<div className={`${styles.box}`} />
-					<JackInTheBox>
-						<Work
-							title={project.title}
-							description={project.description}
-							image={project.image}
-							theme={project.theme}
-							websiteLink={project.websiteLink}
-							githubLink={project.githubLink}
-							side={i % 2 === 0}
-							githubLink2={project.githubLink2}
-						/>
-					</JackInTheBox>
+					<Work
+						title={project.title}
+						description={project.description}
+						image={project.image}
+						theme={project.theme}
+						websiteLink={project.websiteLink}
+						githubLink={project.githubLink}
+						side={i % 2 === 0}
+						githubLink2={project.githubLink2}
+					/>
 				</div>
 			))}
 		</Container>

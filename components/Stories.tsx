@@ -10,7 +10,7 @@ interface Props {}
 
 const Stories: React.FC<Props> = () => {
 	return (
-		<Container className={`mt-5 ${styles.Stories}`}>
+		<Container className={`mt-5 ${styles.Stories}`} id='stories'>
 			<Row>
 				<Col xs={12} md={4} lg={4} className='d-flex justify-content-md-end'>
 					<Roll>
