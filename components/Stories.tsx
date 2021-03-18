@@ -1,5 +1,5 @@
 import Circle from './Circle';
-import { Col, Row, Container } from 'react-bootstrap';
+import { Col, Row, Container, Image } from 'react-bootstrap';
 import { Roll } from 'react-awesome-reveal';
 import { FaArrowRight, FaArrowDown } from 'react-icons/fa';
 import { CgMouse } from 'react-icons/cg';
@@ -30,7 +30,7 @@ const Stories: React.FC<Props> = () => {
 					</div>
 				</Col>
 			</Row>
-			<Container fluid className={`${styles.titleContainer}`}>
+			<Container fluid className={`${styles.titleContainer} mt-2 mt-md-0`}>
 				<div>
 					<h1 className={styles.title}>Patrick</h1>
 					<h1 className={`${styles.title} mb-5 mb-md-0`}>
@@ -40,13 +40,18 @@ const Stories: React.FC<Props> = () => {
 						</span>
 					</h1>
 				</div>
-				<div className='d-flex'>
-					<h5 className='text-muted d-none d-md-flex align-items-center justify-content-center'>
-						SCROLL FOR MORE <FaArrowDown />
-					</h5>
-					<h1 className={`${styles.mouse} text-muted mb-5 mb-md-0 text-right d-inline`}>
-						<CgMouse />
-					</h1>
+				<div>
+					<div className={`${styles.imgContainer} d-none d-md-block mb-5 mr-5`}>
+						<Image src='./dp.png' fluid />
+					</div>
+					<div className='d-flex'>
+						<h5 className='text-muted d-none d-md-flex align-items-center justify-content-center'>
+							SCROLL FOR MORE <FaArrowDown />
+						</h5>
+						<h1 className={`${styles.mouse} text-muted mb-5 mb-md-0 text-right d-inline`}>
+							<CgMouse />
+						</h1>
+					</div>
 				</div>
 			</Container>
 		</Container>

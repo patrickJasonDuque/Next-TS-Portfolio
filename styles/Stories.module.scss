@@ -1,16 +1,22 @@
 @import './variables.scss';
 
 .Stories {
-	min-height: 82vh;
+	min-height: 83vh;
 	background-color: $primary;
 
+	.imgContainer {
+		border-radius: 50%;
+		width: 250px;
+		height: 250px;
+		background-color: $info;
+	}
+
 	.titleContainer {
-		height: max-content;
 		color: $white;
 		display: flex;
 		align-items: flex-end;
 		height: 50vh;
-		justify-content: space-between;
+		justify-content: space-around;
 
 		.title {
 			font-size: 7em;
@@ -43,6 +49,7 @@
 @media only screen and (max-width: 768px) {
 	.Stories {
 		.titleContainer {
+			height: 25vh;
 			.title {
 				font-size: 3em;
 			}
@@ -53,6 +60,7 @@
 @media only screen and (device-width: 768px) {
 	.Stories {
 		.titleContainer {
+			height: 50vh;
 			.title {
 				font-size: 5em;
 			}

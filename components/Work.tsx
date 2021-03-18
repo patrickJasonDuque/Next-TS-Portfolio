@@ -71,7 +71,7 @@ const Work: React.FC<Props> = ({ title, image, theme, side, websiteLink, githubL
 					</div>
 				</Slide>
 			</Col>
-			<Col xs={12} lg={8} className={`${side && 'order-2 order-lg-1'}`}>
+			<Col xs={12} lg={8} className={`${side && 'order-2 order-lg-1'} mt-5 mt-md-0`}>
 				<JackInTheBox>
 					<Image src={image} fluid className={styles.workImage} />
 				</JackInTheBox>
