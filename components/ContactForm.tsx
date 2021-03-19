@@ -78,7 +78,7 @@ const ContactForm: React.FC<Props> = () => {
 					variant='outline-info'
 					className={`${styles.button} ${success && styles.success} p-0 my-3`}
 					size='lg'
-					disabled={disableButton}>
+					disabled={disableButton || loading}>
 					{loading ? (
 						<h1 className={`${styles.loading} text-warning text-center`}>
 							<HiOutlineRefresh />
