@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { BiMailSend, BiFace, BiHdd } from 'react-icons/bi';
+import { ImMenu3, ImMenu4 } from 'react-icons/im';
 
 import Navlink from './Navlink';
 import Name from './Name';
@@ -7,11 +9,15 @@ import Name from './Name';
 interface Props {}
 
 const NavBar: React.FC<Props> = () => {
+	const [ isOpen, setIsOpen ] = useState<boolean>(false);
+
 	return (
 		<header>
 			<Container className='mt-5'>
 				<Navbar bg='primary' variant='dark' expand='lg' collapseOnSelect>
-					<Navbar.Toggle aria-controls='basic-navbar-nav' />
+					<Navbar.Toggle aria-controls='basic-navbar-nav' onClick={() => setIsOpen(!isOpen)} as='h3' className='menu'>
+						{isOpen ? <ImMenu4 /> : <ImMenu3 />}
+					</Navbar.Toggle>
 					<Navbar.Collapse id='basic-navbar-nav'>
 						<Nav>
 							<Navlink icon={<BiFace />} label='STORIES' route='#stories' color='#676cdb' />
