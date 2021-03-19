@@ -87,7 +87,7 @@ const ContactForm: React.FC<Props> = () => {
 					) : (
 						<strong>{success ? 'Sent' : 'Send'}</strong>
 					)}{' '}
-					{!loading && (success !== '' ? <HiArrowRight /> : <AiOutlineCheckCircle />)}
+					{!loading && (disableButton ? <AiOutlineCheckCircle /> : <HiArrowRight />)}
 				</Button>
 
 				{success && <p className='text-success mt-4'>{success}</p>}
