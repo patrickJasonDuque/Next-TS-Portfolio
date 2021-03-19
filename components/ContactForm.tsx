@@ -29,7 +29,6 @@ const ContactForm: React.FC<Props> = () => {
 
 	const handleSubmitForm = async (data: ContactFormData) => {
 		setError(null);
-		setDisableButton(true);
 		setSuccess(null);
 		if (!data.email || !validateEmail(data.email)) {
 			setError('Please add a valid email.');
@@ -45,8 +44,8 @@ const ContactForm: React.FC<Props> = () => {
 				setValue('name', '');
 				setValue('email', '');
 				setValue('text', '');
+				setDisableButton(true);
 			} catch (error) {
-				setDisableButton(false);
 				setError('Something went wrong, Please try again later 😢.');
 			}
 			setLoading(false);
