@@ -10,6 +10,18 @@
 		border: none;
 		background-color: $primary;
 		font-size: 2em;
+		transition: all 1s;
+	}
+
+	.success {
+		transform: translateX(200px);
+		color: $success;
+	}
+
+	.loading {
+		-webkit-animation: spin 2s linear infinite;
+		-moz-animation: spin 2s linear infinite;
+		animation: spin 2s linear infinite;
 	}
 
 	.button:hover,
@@ -17,5 +29,26 @@
 		border: none;
 		background-color: $primary;
 		color: $secondary;
+	}
+
+	.success:hover {
+		color: $success;
+	}
+}
+
+@-moz-keyframes spin {
+	100% {
+		-moz-transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+@keyframes spin {
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
 	}
 }

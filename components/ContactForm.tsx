@@ -1,8 +1,9 @@
 import axios from 'axios';
 import { useState } from 'react';
-import { Button, Form, Container, Modal, Spinner } from 'react-bootstrap';
+import { Button, Form, Container } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
-import { HiArrowRight } from 'react-icons/hi';
+import { HiArrowRight, HiOutlineRefresh } from 'react-icons/hi';
+import { AiOutlineCheckCircle } from 'react-icons/ai';
 
 import styles from '../styles/ContactForm.module.scss';
 
@@ -23,10 +24,12 @@ const ContactForm: React.FC<Props> = () => {
 	const [ error, setError ] = useState<string>(null);
 	const [ success, setSuccess ] = useState<string>(null);
 	const [ loading, setLoading ] = useState<boolean>(false);
+	const [ disableButton, setDisableButton ] = useState<boolean>(false);
 	const { register, handleSubmit, setValue } = useForm();
 
 	const handleSubmitForm = async (data: ContactFormData) => {
 		setError(null);
+		setDisableButton(true);
 		setSuccess(null);
 		if (!data.email || !validateEmail(data.email)) {
 			setError('Please add a valid email.');
@@ -43,6 +46,7 @@ const ContactForm: React.FC<Props> = () => {
 				setValue('email', '');
 				setValue('text', '');
 			} catch (error) {
+				setDisableButton(false);
 				setError('Something went wrong, Please try again later 😢.');
 			}
 			setLoading(false);
@@ -51,11 +55,6 @@ const ContactForm: React.FC<Props> = () => {
 
 	return (
 		<Container className={`${styles.ContactForm}`}>
-			<Modal show={loading} centered>
-				<Modal.Body style={{ height: '200px' }} className='bg-primary d-flex justify-content-center align-items-center'>
-					<Spinner animation='border' variant='light' />
-				</Modal.Body>
-			</Modal>
 			<Form onSubmit={handleSubmit(handleSubmitForm)}>
 				{error && <p className='text-danger'>{error}</p>}
 
@@ -75,8 +74,20 @@ const ContactForm: React.FC<Props> = () => {
 					<Form.Control type='text' name='text' ref={register()} />
 				</Form.Group>
 
-				<Button type='submit' variant='outline-info' className={`${styles.button} p-0 my-3`} size='lg'>
-					<strong>Send</strong> <HiArrowRight />
+				<Button
+					type='submit'
+					variant='outline-info'
+					className={`${styles.button} ${success && styles.success} p-0 my-3`}
+					size='lg'
+					disabled={disableButton}>
+					{loading ? (
+						<h1 className={`${styles.loading} text-warning text-center`}>
+							<HiOutlineRefresh />
+						</h1>
+					) : (
+						<strong>{success ? 'Sent' : 'Send'}</strong>
+					)}{' '}
+					{!loading && (success !== '' ? <HiArrowRight /> : <AiOutlineCheckCircle />)}
 				</Button>
 
 				{success && <p className='text-success mt-4'>{success}</p>}
