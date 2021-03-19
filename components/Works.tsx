@@ -69,7 +69,7 @@ const Works: React.FC<Props> = () => {
 									</span>
 								</h4>, Paypal{' '}
 								<h4 className='d-inline'>
-									<span className='text-warning'>
+									<span className='text-info'>
 										<SiPaypal />
 									</span>
 								</h4>, and Stripe{' '}
@@ -102,7 +102,7 @@ const Works: React.FC<Props> = () => {
 							<li>
 								Works with Paypal API{' '}
 								<h4 className='d-inline'>
-									<span className='text-warning'>
+									<span className='text-info'>
 										<SiPaypal />
 									</span>{' '}
 								</h4>
@@ -171,7 +171,7 @@ const Works: React.FC<Props> = () => {
 								</h4>
 								, and Paypal{' '}
 								<h4 className='d-inline'>
-									<span className='text-warning'>
+									<span className='text-info'>
 										<SiPaypal />
 									</span>
 								</h4>
@@ -205,7 +205,7 @@ const Works: React.FC<Props> = () => {
 							<li>
 								Works with Paypal API{' '}
 								<h4 className='d-inline'>
-									<span className='text-warning'>
+									<span className='text-info'>
 										<SiPaypal />
 									</span>{' '}
 								</h4>
