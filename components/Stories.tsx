@@ -2,6 +2,7 @@ import Circle from './Circle';
 import { Col, Row, Container, Image } from 'react-bootstrap';
 import { Roll } from 'react-awesome-reveal';
 import { FaArrowRight, FaArrowDown } from 'react-icons/fa';
+import { FiArrowUpRight } from 'react-icons/fi';
 import { CgMouse } from 'react-icons/cg';
 
 import styles from '../styles/Stories.module.scss';
@@ -35,7 +36,10 @@ const Stories: React.FC<Props> = () => {
 					<h1 className={styles.title}>Patrick</h1>
 					<h1 className={`${styles.title} mb-5 mb-md-0`}>
 						Duque{' '}
-						<span className='text-info'>
+						<span className='d-none d-md-inline text-info'>
+							<FiArrowUpRight />
+						</span>
+						<span className='d-inline d-md-none text-info'>
 							<FaArrowRight />
 						</span>
 					</h1>
