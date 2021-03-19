@@ -35,9 +35,6 @@
 
 		.mouse {
 			position: relative;
-			animation-name: mouseAnimation;
-			animation-delay: 0s;
-			animation-duration: 3s;
 			animation: mouseAnimation 3s infinite 0s;
 		}
 	}
@@ -48,7 +45,7 @@
 		top: 0;
 	}
 	25% {
-		top: 50px;
+		top: 100px;
 	}
 	50% {
 		top: 0;

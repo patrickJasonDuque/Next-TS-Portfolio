@@ -9,6 +9,19 @@
 		font-size: 6em;
 		font-weight: bold;
 		letter-spacing: 5px;
+
+		.arrow {
+			animation: arrowAnimation 3s infinite 0s;
+		}
+	}
+}
+
+@keyframes arrowAnimation {
+	50% {
+		transform: translateX(100px);
+	}
+	100% {
+		transform: translateX(0px);
 	}
 }
 

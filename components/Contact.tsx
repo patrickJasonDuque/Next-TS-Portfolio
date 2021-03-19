@@ -15,11 +15,11 @@ const Contact: React.FC<Props> = () => {
 			<Container className={`${styles.Contact} mt-5`} id='contact'>
 				<Row>
 					<Col xs={12} lg={8}>
-						<h1 className={styles.header}>
+						<h1 className={`${styles.header} d-flex`}>
 							Let's
-							<span className='text-info ml-2'>
+							<div className={`${styles.arrow} text-info ml-2`}>
 								<FaArrowRight />
-							</span>
+							</div>
 						</h1>
 						<h1 className={styles.header}>Connect</h1>
 						<Col md={8}>
