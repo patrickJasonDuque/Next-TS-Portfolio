@@ -33,17 +33,13 @@ const Experience: React.FC<Props> = () => {
 						</Col>
 						<div className={`${styles.box} d-block d-lg-none`} />
 						<Col xs={12} lg={6}>
-							<p className='text-muted'>
-								<strong>/ PROBLEM SOLVER</strong>
-							</p>
-							<h2 className='my-4'>
-								I enjoy solving problems with clean scalable solutions. I have a genuine passion for learning new
-								things.
+							<h2 className='my-4 text-white'>
+								Enjoys solving problems with clean, scalable solutions and has a genuine passion for learning new things
 							</h2>
-							<p className='text-muted'>
-								I have a strong foundation in Javascript and Typescript. I use frameworks to improve my work. I have
-								some knowledge with some other programming languages like Python and Dart(Flutter).
-							</p>
+							<h5 className='text-muted'>
+								With a strong foundation in Javascript and Typescript, along with some knowledge on other programming
+								languages like Python and Dart(Flutter), I use frameworks to improve my projects.
+							</h5>
 						</Col>
 					</Row>
 				</Container>

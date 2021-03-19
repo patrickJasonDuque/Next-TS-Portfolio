@@ -71,7 +71,7 @@ const ContactForm: React.FC<Props> = () => {
 				</Form.Group>
 
 				<Form.Group controlId='contactText'>
-					<Form.Label className={`${styles.label}`}>About the project:</Form.Label>
+					<Form.Label className={`${styles.label}`}>Your idea:</Form.Label>
 					<Form.Control type='text' name='text' ref={register()} />
 				</Form.Group>
 

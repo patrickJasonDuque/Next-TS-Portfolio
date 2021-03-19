@@ -21,18 +21,18 @@ const Contact: React.FC<Props> = () => {
 								<FaArrowRight />
 							</span>
 						</h1>
-						<h1 className={styles.header}>Connect.</h1>
+						<h1 className={styles.header}>Connect</h1>
 						<Col md={8}>
 							<p className='text-muted'>
-								Patrick Jason Duque is a professional Typescript developer, who uses framework such as{' '}
-								<span className='text-info'>React</span>, <span className='text-success'>Vue</span>, and
-								<span className='text-warning'> Express</span>. Loves to add clarity to complicated concepts of
-								programming.
+								Patrick Jason Duque is a professional Typescript developer, that loves to add clarity to complicated
+								concepts of programming through framework like <span className='text-info'>React</span>,{' '}
+								<span className='text-success'>Vue</span>, and
+								<span className='text-warning'> Express</span>.
 							</p>
 						</Col>
 						<Container className='d-flex justify-content-end my-5'>
 							<Roll>
-								<Circle title='Open for new project.' />
+								<Circle title='Open for a new project' />
 							</Roll>
 							<div className='w-25 d-none d-lg-block' />
 						</Container>

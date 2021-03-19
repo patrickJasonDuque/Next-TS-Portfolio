@@ -49,7 +49,7 @@ const Works: React.FC<Props> = () => {
 			description: (
 				<Container className='text-white mt-5'>
 					<Container>
-						<h4>Front-End application</h4>
+						<h4>Front-End Application</h4>
 						<ul>
 							<li>
 								Done in Vue{' '}
@@ -58,11 +58,11 @@ const Works: React.FC<Props> = () => {
 										<SiVueDotJs />
 									</span>{' '}
 								</h4>
-								with Vuex.
+								with Vuex
 							</li>
 							<li>Connects to the API server via HTTP (axios).</li>
 							<li>
-								Use of tools like Vuetify{' '}
+								Works with Vuetify{' '}
 								<h4 className='d-inline'>
 									<span className='text-info'>
 										<SiVuetify />
@@ -76,13 +76,13 @@ const Works: React.FC<Props> = () => {
 								<h4 className='d-inline'>
 									<span className='text-white'>
 										<FaStripe />
-									</span>.
+									</span>
 								</h4>
 							</li>
 						</ul>
 					</Container>
 					<Container>
-						<h4>Back-End server</h4>
+						<h4>Back-End Server</h4>
 						<ul>
 							<li>
 								Done in Node{' '}
@@ -95,12 +95,12 @@ const Works: React.FC<Props> = () => {
 								<h4 className='d-inline'>
 									<span className='text-success'>
 										<SiMongodb />
-									</span>.
+									</span>
 								</h4>
 							</li>
 							<li>Has HTTP REST API endpoints.</li>
 							<li>
-								Use of tools like Paypal API{' '}
+								Works with Paypal API{' '}
 								<h4 className='d-inline'>
 									<span className='text-warning'>
 										<SiPaypal />
@@ -110,7 +110,7 @@ const Works: React.FC<Props> = () => {
 								<h4 className='d-inline'>
 									<span className='text-white'>
 										<FaStripe />
-									</span>.
+									</span>
 								</h4>
 							</li>
 						</ul>
@@ -128,7 +128,7 @@ const Works: React.FC<Props> = () => {
 			description: (
 				<Container className='text-white text-left mt-5'>
 					<Container>
-						<h4>Front-End application</h4>
+						<h4>Front-End Application</h4>
 						<ul>
 							<li>
 								Done in Next TS{' '}
@@ -157,7 +157,7 @@ const Works: React.FC<Props> = () => {
 							</li>
 							<li>Connects to the API server via HTTP (axios).</li>
 							<li>
-								Use of tools like React Bootstrap{' '}
+								Works with React Bootstrap{' '}
 								<h4 className='d-inline'>
 									<span className='text-info'>
 										<SiBootstrap />
@@ -173,13 +173,13 @@ const Works: React.FC<Props> = () => {
 								<h4 className='d-inline'>
 									<span className='text-warning'>
 										<SiPaypal />
-									</span>.
+									</span>
 								</h4>
 							</li>
 						</ul>
 					</Container>
 					<Container>
-						<h4>Back-End server</h4>
+						<h4>Back-End Server</h4>
 						<ul>
 							<li>
 								Done in Node{' '}
@@ -198,12 +198,12 @@ const Works: React.FC<Props> = () => {
 								<h4 className='d-inline'>
 									<span className='text-success'>
 										<SiMongodb />
-									</span>.
+									</span>
 								</h4>
 							</li>
 							<li>Has HTTP REST API endpoints.</li>
 							<li>
-								Use of tools like Paypal API{' '}
+								Works with Paypal API{' '}
 								<h4 className='d-inline'>
 									<span className='text-warning'>
 										<SiPaypal />
@@ -213,7 +213,7 @@ const Works: React.FC<Props> = () => {
 								<h4 className='d-inline'>
 									<span className='text-white'>
 										<FaStripe />
-									</span>.
+									</span>
 								</h4>
 							</li>
 						</ul>
@@ -230,7 +230,7 @@ const Works: React.FC<Props> = () => {
 			description: (
 				<Container className='text-white'>
 					<Container>
-						<h4>Front-End application</h4>
+						<h4>Front-End Application</h4>
 						<ul>
 							<li>
 								Done in React{' '}
@@ -244,7 +244,7 @@ const Works: React.FC<Props> = () => {
 									<span className='text-info'>
 										<SiRedux />
 									</span>
-								</h4>.
+								</h4>
 							</li>
 							<li>
 								Connects to the API server via HTTP (axios) and Firebase{' '}
@@ -260,7 +260,7 @@ const Works: React.FC<Props> = () => {
 									<span className='text-danger'>
 										<IoLogoSass />
 									</span>{' '}
-								</h4>.
+								</h4>
 							</li>
 						</ul>
 					</Container>
@@ -268,7 +268,7 @@ const Works: React.FC<Props> = () => {
 			)
 		},
 		{
-			title: 'Barangay Database',
+			title: 'Local Government Database',
 			theme: Theme.SECONDARY,
 			image: './db.png',
 			githubLink: 'https://github.com/patrickJasonDuque/barangay-database-frontend',
@@ -276,7 +276,7 @@ const Works: React.FC<Props> = () => {
 			description: (
 				<Container className='text-white text-left mt-5'>
 					<Container>
-						<h4>Front-End application</h4>
+						<h4>Front-End Application</h4>
 						<ul>
 							<li>
 								Done in React{' '}
@@ -297,9 +297,9 @@ const Works: React.FC<Props> = () => {
 									</span>
 								</h4>
 							</li>
-							<li>Connects to the API server via HTTP (axios).</li>
+							<li>Connects to the API server via HTTP (axios)</li>
 							<li>
-								Use of tools like UIKit 3{' '}
+								Works with UIKit 3{' '}
 								<h4 className='d-inline'>
 									<span className='text-info'>
 										<SiUikit />
@@ -310,12 +310,12 @@ const Works: React.FC<Props> = () => {
 									<span className='text-danger'>
 										<IoLogoSass />
 									</span>
-								</h4>.
+								</h4>
 							</li>
 						</ul>
 					</Container>
 					<Container>
-						<h4>Back-End server</h4>
+						<h4>Back-End Server</h4>
 						<ul>
 							<li>
 								Done in Node{' '}
@@ -334,10 +334,10 @@ const Works: React.FC<Props> = () => {
 								<h4 className='d-inline'>
 									<span className='text-success'>
 										<SiMongodb />
-									</span>.
+									</span>
 								</h4>
 							</li>
-							<li>Has HTTP REST API endpoints.</li>
+							<li>Has HTTP REST API endpoints</li>
 						</ul>
 					</Container>
 				</Container>
@@ -350,18 +350,17 @@ const Works: React.FC<Props> = () => {
 			<Row>
 				<div className={`${styles.box}`} />
 				<div className={`${styles.box}`} />
-				<Col xs={12} lg={6}>
+				<Col xs={12} lg={4}>
 					<p className='text-muted'>
 						<strong>/ W O R K S</strong>
 					</p>
-					<h2 className='mb-0 mt-4 text-white'>Selected works,</h2>
-					<h2 className='mt-0 mb-4 text-white'>Sample projects.</h2>
-					<p className='text-muted mb-0 mt-4'>Passion for building applications</p>
-					<p className='text-muted mt-0 mb-4 '>to test and improve my knowledge.</p>
+					<h2 className='mb-0 mt-4 text-white'>Selected creations, Sample projects.</h2>
+					<h2 className='mt-0 mb-4 text-white' />
+					<h5 className='text-muted mb-0 mt-4'>Passion for building applications to test and improve my knowledge.</h5>
 				</Col>
 				<div className={`${styles.box} d-block d-lg-none`} />
-				<Col xs={12} lg={6}>
-					<div className={styles.typewriterHolder}>
+				<Col xs={12} lg={8} className='mt-5'>
+					<div className={`${styles.typewriterHolder} text-right`}>
 						<Typewriter
 							onInit={() => {}}
 							options={{

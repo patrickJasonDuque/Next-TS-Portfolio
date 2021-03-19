@@ -20,13 +20,13 @@ const Stories: React.FC<Props> = () => {
 				<Col xs={12} md={3} className='d-none d-lg-block' />
 				<Col xs={12} md={8} lg={5} className='mt-5 mt-md-0'>
 					<div className='ml-0 ml-md-5'>
-						<p className='text-muted'>
-							<strong>/ THIS IS ME</strong>
-						</p>
-						<h3 className='text-white'>Experienced Developer remotely from the Philippines.</h3>
-						<p className='text-muted mt-4 mb-1'>
-							A professional & imaginative front-end developer. Loves to add clarity to complicated concepts by design
-						</p>
+						<h2 className='text-white'>
+							<strong>EXPERIENCED WEB DEVELOPER</strong>
+						</h2>
+						<h5 className='mt-4 mb-1 text-muted'>
+							A professional & imaginative Filipino fullstack developer who loves to add clarity to complicated
+							programming concepts and ideas
+						</h5>
 					</div>
 				</Col>
 			</Row>
