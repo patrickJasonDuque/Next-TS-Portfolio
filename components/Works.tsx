@@ -360,7 +360,7 @@ const Works: React.FC<Props> = () => {
 				</Col>
 				<div className={`${styles.box} d-block d-lg-none`} />
 				<Col xs={12} lg={8} className='mt-5'>
-					<div className={`${styles.typewriterHolder} text-right`}>
+					<div className={`${styles.typewriterHolder} text-center text-md-right`}>
 						<Typewriter
 							onInit={() => {}}
 							options={{
