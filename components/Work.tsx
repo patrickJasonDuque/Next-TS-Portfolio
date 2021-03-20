@@ -23,7 +23,7 @@ const Work: React.FC<Props> = ({ title, image, theme, side, websiteLink, githubL
 		<Row className={styles.Work}>
 			<Col xs={12} lg={4} className={`${styles.description} ${side && 'order-1 order-lg-2'}`}>
 				<Slide>
-					<div className={side ? 'text-left' : 'text-right'}>
+					<div className={`text-left ${side ? 'text-lg-left' : 'text-lg-right'}`}>
 						<div className={`${side ? 'text-right' : 'text-left'} my-4 my-md-0`}>
 							<Badge variant={theme} pill className='p-3'>
 								<h4 className='text-white'>{title}</h4>
