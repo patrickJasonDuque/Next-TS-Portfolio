@@ -225,7 +225,7 @@ const Works: React.FC<Props> = () => {
 			title: 'Burger Builder',
 			theme: Theme.WARNING,
 			image: './burger.png',
-			websiteLink: 'https://patrickjasonduque.github.io/Burger',
+			websiteLink: 'https://burger-builder-proj.herokuapp.com/',
 			githubLink: 'https://github.com/patrickJasonDuque/Burger',
 			description: (
 				<Container className='text-white'>
