@@ -26,11 +26,12 @@ export default function Home() {
 			<Works />
 			<div style={{ height: '10vh' }} />
 			<hr />
-			<div style={{ height: '10vh' }} />
-			<Slide>
-				<Contact />
-			</Slide>
-			<Footer />
+			<div className={styles.wrapper}>
+				<Slide>
+					<Contact />
+					<Footer />
+				</Slide>
+			</div>
 		</div>
 	);
 }

@@ -1,37 +1,42 @@
 @import './variables.scss';
 
-.linkedIn {
-	color: $primary;
-	transition: color 0.5s;
-}
+.Footer {
+	z-index: 3;
+	position: relative;
 
-.linkedIn:hover {
-	color: $linkedInColor;
-}
+	.linkedIn {
+		color: $primary;
+		transition: color 0.5s;
+	}
 
-.badge {
-	background-color: $gray;
-	transition: background-color 0.5s;
-}
+	.linkedIn:hover {
+		color: $linkedInColor;
+	}
 
-.badge:hover {
-	background-color: $primary;
-}
+	.badge {
+		background-color: $gray;
+		transition: background-color 0.5s;
+	}
 
-.github {
-	color: $primary;
-	transition: color 0.5s;
-}
+	.badge:hover {
+		background-color: $primary;
+	}
 
-.github:hover {
-	color: $githubColor;
-}
+	.github {
+		color: $primary;
+		transition: color 0.5s;
+	}
 
-.facebook {
-	color: $primary;
-	transition: color 0.5s;
-}
+	.github:hover {
+		color: $githubColor;
+	}
 
-.facebook:hover {
-	color: $facebookColor;
+	.facebook {
+		color: $primary;
+		transition: color 0.5s;
+	}
+
+	.facebook:hover {
+		color: $facebookColor;
+	}
 }

@@ -2,8 +2,10 @@
 
 .Contact {
 	min-height: 70vh;
-	background-color: $primary;
 	color: $white;
+	position: relative;
+	border-radius: 20px;
+	background-color: $primary;
 
 	.header {
 		font-size: 6em;
