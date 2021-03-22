@@ -12,7 +12,7 @@ interface Props {}
 const Contact: React.FC<Props> = () => {
 	return (
 		<Fragment>
-			<Container className={`${styles.Contact} p-0 p-lg-5 mb-0 my-5`} id='contact'>
+			<Container className={`${styles.Contact} p-1 p-lg-5 mb-0 my-5`} id='contact'>
 				<Row>
 					<Col xs={12} lg={8}>
 						<h1 className={`${styles.header} d-flex`}>
