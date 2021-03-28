@@ -1,11 +1,10 @@
-import axios from 'axios';
-import { useState } from 'react';
-import { Button, Form, Container } from 'react-bootstrap';
-import { useForm } from 'react-hook-form';
-import { HiArrowRight, HiOutlineRefresh } from 'react-icons/hi';
-import { AiOutlineCheckCircle } from 'react-icons/ai';
-
-import styles from '../styles/ContactForm.module.scss';
+import axios from "axios";
+import { useState } from "react";
+import { Button, Container, Form } from "react-bootstrap";
+import { useForm } from "react-hook-form";
+import { AiOutlineCheckCircle } from "react-icons/ai";
+import { HiArrowRight, HiOutlineRefresh } from "react-icons/hi";
+import styles from "../styles/ContactForm.module.scss";
 
 interface Props {}
 
@@ -21,32 +20,32 @@ const validateEmail = (email: string) => {
 };
 
 const ContactForm: React.FC<Props> = () => {
-	const [ error, setError ] = useState<string>(null);
-	const [ success, setSuccess ] = useState<string>(null);
-	const [ loading, setLoading ] = useState<boolean>(false);
-	const [ disableButton, setDisableButton ] = useState<boolean>(false);
+	const [error, setError] = useState<string>(null);
+	const [success, setSuccess] = useState<string>(null);
+	const [loading, setLoading] = useState<boolean>(false);
+	const [disableButton, setDisableButton] = useState<boolean>(false);
 	const { register, handleSubmit, setValue } = useForm();
 
 	const handleSubmitForm = async (data: ContactFormData) => {
 		setError(null);
 		setSuccess(null);
 		if (!data.email || !validateEmail(data.email)) {
-			setError('Please add a valid email.');
+			setError("Please add a valid email.");
 		} else if (!data.name) {
-			setError('Please add your name 😊.');
+			setError("Please add your name 😊.");
 		} else if (!data.text) {
-			setError('What would you like to tell me? 🤔.');
+			setError("What would you like to tell me? 🤔.");
 		} else {
 			setLoading(true);
 			try {
-				const message = (await axios.post('/api/email', { name: data.name, email: data.email, text: data.text })).data;
+				const message = (await axios.post("/api/email", { name: data.name, email: data.email, text: data.text })).data;
 				setSuccess(message.message as string);
-				setValue('name', '');
-				setValue('email', '');
-				setValue('text', '');
+				setValue("name", "");
+				setValue("email", "");
+				setValue("text", "");
 				setDisableButton(true);
 			} catch (error) {
-				setError('Something went wrong, Please try again later 😢.');
+				setError("Something went wrong, Please try again later 😢.");
 			}
 			setLoading(false);
 		}
@@ -55,41 +54,41 @@ const ContactForm: React.FC<Props> = () => {
 	return (
 		<Container className={`${styles.ContactForm}`}>
 			<Form onSubmit={handleSubmit(handleSubmitForm)}>
-				{error && <p className='text-danger'>{error}</p>}
+				{error && <p className="text-danger">{error}</p>}
 
-				<Form.Group controlId='contactEmail'>
+				<Form.Group controlId="contactEmail">
 					<Form.Label className={`${styles.label}`}>Your email address:</Form.Label>
-					<Form.Control type='email' name='email' ref={register()} />
-					<Form.Text className='text-muted'>I'll never share your email with anyone else.</Form.Text>
+					<Form.Control type="email" name="email" ref={register()} />
+					<Form.Text className="text-muted">I'll never share your email with anyone else.</Form.Text>
 				</Form.Group>
 
-				<Form.Group controlId='contactName'>
+				<Form.Group controlId="contactName">
 					<Form.Label className={`${styles.label}`}>Your name:</Form.Label>
-					<Form.Control type='text' name='name' ref={register()} />
+					<Form.Control type="text" name="name" ref={register()} />
 				</Form.Group>
 
-				<Form.Group controlId='contactText'>
+				<Form.Group controlId="contactText">
 					<Form.Label className={`${styles.label}`}>Your idea:</Form.Label>
-					<Form.Control type='text' name='text' ref={register()} />
+					<Form.Control type="text" name="text" ref={register()} />
 				</Form.Group>
 
 				<Button
-					type='submit'
-					variant='outline-info'
+					type="submit"
+					variant="outline-info"
 					className={`${styles.button} ${success && styles.success} p-0 my-3`}
-					size='lg'
+					size="lg"
 					disabled={disableButton || loading}>
 					{loading ? (
 						<h1 className={`${styles.loading} text-warning text-center`}>
 							<HiOutlineRefresh />
 						</h1>
 					) : (
-						<strong>{success ? 'Sent' : 'Send'}</strong>
-					)}{' '}
+						<strong>{success ? "Sent" : "Send"}</strong>
+					)}{" "}
 					{!loading && (disableButton ? <AiOutlineCheckCircle /> : <HiArrowRight />)}
 				</Button>
 
-				{success && <p className='text-success mt-4'>{success}</p>}
+				{success && <p className="text-success mt-4">{success}</p>}
 			</Form>
 		</Container>
 	);

@@ -1,6 +1,4 @@
-import { Fragment } from 'react';
-
-import styles from '../styles/Circle.module.scss';
+import styles from "../styles/Circle.module.scss";
 
 interface Props {
 	title: string;

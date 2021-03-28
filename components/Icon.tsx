@@ -1,7 +1,6 @@
-import { Fragment } from 'react';
-import { Image, Col } from 'react-bootstrap';
-
-import styles from '../styles/Icon.module.scss';
+import { Fragment } from "react";
+import { Image } from "react-bootstrap";
+import styles from "../styles/Icon.module.scss";
 
 interface Props {
 	iconPath: string;

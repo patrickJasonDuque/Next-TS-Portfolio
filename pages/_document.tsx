@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Head, Html, Main, NextScript } from "next/document";
 
 //Metadata
 export default class CustomDocument extends Document {
@@ -6,12 +6,12 @@ export default class CustomDocument extends Document {
 		return (
 			<Html>
 				<Head>
-					<link rel='preconnect' href='https://fonts.gstatic.com' />
+					<link rel="preconnect" href="https://fonts.gstatic.com" />
 					<link
-						href='https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap'
-						rel='stylesheet'
+						href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap"
+						rel="stylesheet"
 					/>
-					<link href='https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap' rel='stylesheet' />
+					<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet" />
 				</Head>
 				<body>
 					<Main />

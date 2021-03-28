@@ -1,11 +1,11 @@
-@import './variables.scss';
+@import "./variables.scss";
 
 .Works {
 	.typewriterHolder {
 		transform: rotate(-10deg);
 		font-size: 6em;
 		color: rgba($color: $gray, $alpha: 0.4);
-		font-family: 'Caveat', cursive;
+		font-family: "Caveat", cursive;
 		text-align: center;
 		letter-spacing: 20px;
 		font-weight: bold;

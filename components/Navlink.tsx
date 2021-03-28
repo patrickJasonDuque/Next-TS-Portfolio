@@ -1,10 +1,8 @@
-import { useMemo } from 'react';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import { Nav } from 'react-bootstrap';
-
-import { BsDot } from 'react-icons/bs';
-import { IconContext } from 'react-icons';
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { Nav } from "react-bootstrap";
+import { IconContext } from "react-icons";
+import { BsDot } from "react-icons/bs";
 
 interface Props {
 	icon: JSX.Element;
@@ -26,11 +24,11 @@ const Navlink: React.FC<Props> = ({ icon, label, route, color }) => {
 			<Link href={route} passHref>
 				<Nav.Link>
 					<h4>
-						<IconContext.Provider value={{ color: active ? color : '#7f848b', className: 'mr-1' }}>
+						<IconContext.Provider value={{ color: active ? color : "#7f848b", className: "mr-1" }}>
 							{icon}
 						</IconContext.Provider>
 						{label}
-						<IconContext.Provider value={{ color: active ? color : '#7f848b', size: '1em' }}>
+						<IconContext.Provider value={{ color: active ? color : "#7f848b", size: "1em" }}>
 							<BsDot />
 						</IconContext.Provider>
 					</h4>
